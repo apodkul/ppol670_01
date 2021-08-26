@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>PPOL 670-01: Introduction to Data Science</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alexander Podkul, PhD" />
+    <script src="Week01_files/header-attrs-2.7/header-attrs.js"></script>
+    <link rel="stylesheet" href="mccourt_slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# PPOL 670-01: Introduction to Data Science
+## Week 01: Course Introduction
+### Alexander Podkul, PhD
+### Fall 2021
+
+---
+
+
+
+
+
+## Tonight's Outline 
+.pull-left[
+- What is data science? 
+- How can we use data science to study public policy? 
+- Course overview: goals and expectations
+- Syllabus review and course site
+- COVID-19 considerations 
+- Introductions
+- BREAK (Always negotiable)
+- Soft Introduction of R 
+]
+.pull-right[
+&lt;img src="folder-tree.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+class: inverse, center, middle
+## Data Science &amp; Public Policy 
+
+
+
+---
+## What is Data Science? 
+.pull-left[
+![THAT Data Science Chart](Week01_files/figure-html/unnamed-chunk-2-1.png)
+]
+.pull-right[
+The three pillars of _that_ data science graphic: 
+{{content}}
+]
+
+--
+- __Statistical learning__ - being able to derive insights (inferences) from an observational or experimental data set (correlational or causal inference)
+{{content}}
+
+--
+- __Domain expertise__ - bringing context to a data set and methodology (think: the literature review)
+{{content}}
+
+--
+- __Programming/Hacking__ - being able to collect and wrangle data sets (of many sizes) and produce replicable pipelines 
+
+
+---
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="datascienceblog25datascienceskills.png" alt="Analytics Week Survey" width="70%" /&gt;
+&lt;p class="caption"&gt;Analytics Week Survey&lt;/p&gt;
+&lt;/div&gt;
+
+---
+## What is Data Science? 
+
+&lt;img src="flow.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Another framework for thinking about data science is like a flow chart: 
+
+--
+- Having a problem (some hypothesis or broader question)
+
+--
+- Designing a study to best explore the problem (how can our domain expertise guide the correct way for making our problem understandable)
+
+--
+- Measuring (all) the relevant factors (do we need to collect data?; what features do we need to include?)
+
+--
+- Using descriptive or inferential statistics to understand those measurements (following from the _design_ of the study how can we best analyze our data?)
+
+--
+- Communicating those findings to audience to make them actionable (data storytelling, visualization, dashboards or interactives)
+
+--
+- Making the above process repeatable (do we need to repeat this exercise?)
+
+---
+## Data Science and Public Policy 
+
+Data science connects to public policy _many_ different ways. The large amount of data that exists allows it to be used for: 
+- assessing public policies 
+- identifying areas where policies might be needed (or should be reversed)
+
+
+--
+Perspective matters!: 
+- Government 
+- Policy stakeholders (interest groups, politicians, etc.)
+- Private corporations 
+
+---
+## Data Science and Public Policy: Covid 
+
+- Data collection - from various levels of government 
+- Data visualizations - cases, hospitalizations, vaccinations, etc. 
+- Communicating responses - how can risk be effectively communicated?
+- Allocating resources - PPE, vaccinations, other parts of the supply chain
+
+--
+&lt;img src="Screen Shot 2021-08-24 at 9.10.08 PM.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, center, middle
+## Our Course 
+
+
+---
+## Course Overview: goals and expectations 
+
+__Course Goals__  
+1. to introduce basic data collection techniques 
+2. to master data wrangling and data cleaning 
+3. to work with various supervised and unsupervised models in an interpretable framework
+4. to produce a full project using the skills learned in the class for students' portfolios
+
+
+--
+The course will emphasize __application__ and will include significant time working with R.
+
+
+--
+__What the course is not__
+
+
+--
+1. a programming class intended for aspiring (or current) developers&lt;sup&gt;1&lt;/sup&gt;  
+
+--
+2. an opportunity to learn R _and only learn R_&lt;sup&gt;2&lt;/sup&gt;  
+
+--
+3. a deep dive on the mathematical proofs underlying machine learning&lt;sup&gt;3&lt;/sup&gt;  
+
+
+--
+.footnote[
+[1] but we will do a nontrivial amount of programming  
+[2] but you will become proficient at R  
+[3] but there won't _not_ be math  
+]
+
+---
+## Syllabus Review and Course Site 
+
+Course site: http://ppol670.alexanderpodkul.com/
+
+&lt;iframe src="http://ppol670.alexanderpodkul.com" width="100%" height="400px" style="border: black;"&gt;&lt;/iframe&gt;
+
+---
+## Syllabus Notes 
+
+__Syllabus__ 
+1. Prerequisite Courses
+2. Office Hours 
+3. Required Texts 
+4. Assignments
+5. Late Policy 
+6. Class Materials Use 
+7. Weekly Assignment Schedule 
+
+
+--
+__Remainder of the Website__ 
+1. Course Materials - where readings, lectures, code snippets will be posted
+2. Resources - helpful guides (will post) 
+3. Packages - will update 
+
+
+--
+__Canvas__
+1. Grade book 
+2. Discussion Board 
+3. Files that cannot be shared widely 
+
+
+
+---
+## Covid-19 Considerations 
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="fauci.png" alt="Copley Formal Lounge (and Dr. Anthony Fauci)" width="70%" /&gt;
+&lt;p class="caption"&gt;Copley Formal Lounge (and Dr. Anthony Fauci)&lt;/p&gt;
+&lt;/div&gt;
+]
+.pull-right[
+A few notes about Covid-19 as we begin our semester: 
+{{content}}
+
+]
+
+--
+- __Seating arrangements__ - keep to the seat you have today  
+{{content}}
+
+--
+- __Masks__ - required to wear them in-class at the moment
+{{content}}
+
+--
+- __Attendance__ - (implied as part of participation but) department ask but do not hesitate to skip the course meeting if you are at all feeling unwell
+{{content}}
+
+--
+- __Instructional continuity__ - changed plans will be communicated via e-mail as soon as possible 
+    + if in-person learning is placed on pause, we will pivot to synchronous Zoom sessions
+    + if a course meeting has to be canceled, course material will be delivered in an asynchronous format later in the semester 
+
+
+Thank you in advance for your patience! 😄
+
+---
+class: inverse, center, middle
+## Class Introductions
+
+
+---
+## Class Introductions&lt;sup&gt;1&lt;/sup&gt;  
+.pull-left[
+- Name 
+- Program (MPP?) and Year 
+- Research Interests 
+- Reason(s) why you're interested in this course 
+]
+.pull-right[
+&lt;img src="jack.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+]
+.footnote[
+[1] (... also known as our first data collection exercise 😄)
+]
+---
+class: inverse, center, middle
+## Class Break 
+
+---
+## What is R? 
+
+.pull-left[
+R is an &lt;span style = "color:#009933;"&gt; object-oriented&lt;/span&gt; &lt;span style = "color:#6600cc;"&gt;statistical programming language&lt;/span&gt; developed in 1993 at the University of Auckland as an implementation of the S programming language. Currently on version 4.1.1, R is written using C, Fortran, and R and is _free_. R is an &lt;span style = "color:#ff0000;"&gt;interpreted language&lt;/span&gt; and is often run through a console, an IDE, or command-line. 
+]
+.pull-right[
+&lt;img src="rconsole.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+## Why use R? 
+
+--
+- Open-source
+
+--
+- Free
+
+--
+- Flexible coding (custom functions!)
+
+--
+- A great package library (especially for those in social science disciplines)
+
+--
+- An environment that neatly combines the power of scripting, data modeling, and data visualization  
+
+--
+- It's not Stata
+
+
+--
+From _The New York Times_: "R is... the name of a popular programming language used by a growing number of data analysts inside corporations and academia. It is becoming their lingua franca partly because data mining has entered a gold age... Companies as diverse as Google, Pfizer, Merck, Bank of America, the InterContintental Hotels Group, and Shell use it.''
+
+
+---
+## Installing R 
+
+Installation of R: https://cran.r-project.org
+&lt;iframe src="https://cran.r-project.org" width="100%" height="400px" style="border: black;"&gt;&lt;/iframe&gt;
+
+
+---
+## R Studio 
+.pull-left[
+__R Studio__ is an open source integrated development environment (IDE) for running anything you want in R. In addition to providing a useful programming environment, R studio provides a few benefits over using R console: 
+- easier package maintenance 
+- easier to visualize data and file structures 
+- able to view data frames (read: data sets) as if you would in Excel
+- great integration with R Markdown to produce easy outputs in .pdf, .html, and even .doc
+]
+.pull-right[
+&lt;img src="rstudio.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+## Installing R Studio 
+
+Installation of R: https://www.rstudio.com --&gt; Download --&gt; 'Rstudio Desktop (Free)'
+&lt;iframe src="https://www.rstudio.com/products/rstudio/download/" width="100%" height="400px" style="border: black;"&gt;&lt;/iframe&gt;
+
+---
+## The Anatomy of R Studio
+
+- R Console
+- R Script/Editor
+- Environment 
+- File Browser, Plots, Packages, Help
+
+---
+### R Console 
+&lt;img src="rs_1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+### R Script/Editor 
+&lt;img src="rs_2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+### Environment 
+&lt;img src="rs_3.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+### File Browser, Plots, Packages, Help
+&lt;img src="rs_4.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+&lt;img src="goes.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+## Scripting 
+
+What are the benefits to using scripting languages for data science and data analysis (compared to, e.g., Microsoft Excel)?
+
+1. __Reproduction__ - Can easily re-run your (or someone else's code)
+
+--
+2. __Replication__  - Makes it easy to apply new models to existing data or apply established models to new data. (Easy to build on others' work -- packages!)
+
+--
+3. __Version control__ - makes it easy to keep track of your changes (or the changes of a collaborator) (Note: R plays well with Git)
+
+--
+4. __Many platforms__ - can run R scripts through R console, R Studio, local, server, or cloud-based command line
+
+--
+5. __Portability__ - Can sit atop connected databases
+
+
+---
+## Next Week's Readings 
+
+__Data storage and data types__
+
+Can be found at: http://ppol670.alexanderpodkul.com/course_materials.html#Week_2,_August_30
+
+-Wickham and Grolemund Chapters 1, 2, and 4 
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
