@@ -90,9 +90,9 @@ model <- caret::train(medv~.,
 housing$predict_rf <- predict(model, housing)
 
 #LM
-surrogate_model_lm <- lm(medv~., 
+surrogate_model_lm <- lm(predict_rf ~., 
                          data = housing %>% 
-                           dplyr::select(-predict_rf)
+                           dplyr::select(-medv)
                            )
 summary(surrogate_model_lm)
 
@@ -102,9 +102,9 @@ housing$predict_lm <- predict(surrogate_model_lm,
 
 
 #RPART
-surrogate_model_rpart <- rpart(medv~., 
+surrogate_model_rpart <- rpart(predict_rf ~., 
                          data = housing %>% 
-                           dplyr::select(-predict_rf, -predict_lm)
+                           dplyr::select(-medv, -predict_lm)
 )
 rpart.plot::rpart.plot(surrogate_model_rpart)
 
