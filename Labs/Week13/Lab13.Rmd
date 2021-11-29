@@ -133,10 +133,6 @@ ji('face')
 install.packages('RSelenium')
 library(RSelenium)
 
-
-library(RSelenium)
-library(rvest)
-
 #Start Browser 
 browser_x <- rsDriver(browser = 'firefox', 
                       port = 4544L, 
@@ -164,6 +160,6 @@ html <- browser_drive$getPageSource()[[1]]
 
 x <- html %>% 
   read_html() %>%
-  html_table()
+  html_elements('h3')
 
 ```
