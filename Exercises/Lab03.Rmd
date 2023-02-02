@@ -79,8 +79,8 @@ census_data %>%
 
 
 ### Joining Data Frames
-```{r, eval = F}
-census_regions <- read.csv('census_regions.csv')
+```{r, eval = T}
+census_regions <- read.csv('https://raw.githubusercontent.com/apodkul/ppol670_01/main/Data/census_regions.csv')
 
 census_data %>% 
   select(STNAME, CTYNAME, hispanic_perc)
@@ -95,8 +95,6 @@ table(census_regions$State.Name)
 ```
 
 ```{r, eval = T, echo = T}
-census_regions <- read.csv('https://raw.githubusercontent.com/apodkul/ppol670_01/main/Data/census_regions.csv')
-
 census_data <- census_data %>% 
   left_join(y = census_regions, 
             by = c('STNAME' = 'State.Name'))
