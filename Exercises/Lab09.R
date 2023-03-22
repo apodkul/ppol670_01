@@ -16,6 +16,8 @@ heart %>%
 heart <- heart %>% 
   purrr::modify_if(is.character, as.numeric) 
 
+heart <- heart %>% 
+  na.omit()
 
 ### Estimating and working with Logit 
 ##### Compare with Linear
@@ -106,7 +108,8 @@ knn_mod_ct2 <- train(
   data = heart_train, 
   trControl = trainControl(method = 'cv', number = 5), 
   method = 'knn', 
-  tuneGrid = expand.grid(k = c(1, 3, 5, 9, 10, 15, 20, 25))
+  tuneGrid = expand.grid(k = c(1, 3, 5, 9, 10, 15, 20, 25)), 
+  na.action = na.omit
 )
 
 confusionMatrix(knn_mod_ct2)
